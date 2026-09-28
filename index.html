@@ -1,112 +1,468 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julius Care</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f9fc;
-      color: #222;
-    }
 
-    header {
-      background: #0b3d91;
-      color: white;
-      padding: 20px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header h1 {
-      margin: 0;
-    }
+<title>Julius Care | Compassionate Home Care Services</title>
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-    }
 
-    .hero {
-      padding: 100px 8%;
-      text-align: center;
-      background: white;
-    }
+<style>
 
-    .hero h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
+/* ===== GLOBAL STYLE ===== */
 
-    .hero p {
-      font-size: 18px;
-      color: #555;
-    }
+body {
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#F8FAFC;
+    color:#222222;
+}
 
-    .hero a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 25px;
-      background: #0b3d91;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-    }
 
-    .services {
-      padding: 60px 8%;
-      text-align: center;
-    }
+/* ===== HEADER ===== */
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 50px;
-    }
-  </style>
+header {
+
+    background:#0B3D91;
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+header h1 {
+
+    margin:0;
+    font-size:28px;
+
+}
+
+
+
+nav a {
+
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+
+}
+
+
+nav a:hover {
+
+    color:#D8F3F0;
+
+}
+
+
+/* ===== HERO SECTION ===== */
+
+
+.hero {
+
+    background:white;
+    padding:100px 8%;
+    text-align:center;
+
+}
+
+
+.hero h2 {
+
+    color:#0B3D91;
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+
+.hero p {
+
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+
+}
+
+
+.button {
+
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#2A9D8F;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+
+.button:hover {
+
+    background:#0B3D91;
+
+}
+
+
+
+/* ===== ABOUT PREVIEW ===== */
+
+
+.about {
+
+    background:#D8F3F0;
+    padding:70px 8%;
+    text-align:center;
+
+}
+
+
+.about h2 {
+
+    color:#0B3D91;
+
+}
+
+
+
+
+/* ===== SERVICES ===== */
+
+
+.services {
+
+    padding:70px 8%;
+    text-align:center;
+
+}
+
+
+.services h2 {
+
+    color:#0B3D91;
+
+}
+
+
+.service-container {
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+
+}
+
+
+.card {
+
+    background:white;
+    width:260px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+.card h3 {
+
+    color:#2A9D8F;
+
+}
+
+
+
+/* ===== WHY CHOOSE US ===== */
+
+
+.why {
+
+    background:#0B3D91;
+    color:white;
+    padding:70px 8%;
+    text-align:center;
+
+}
+
+
+.why h2 {
+
+    color:white;
+
+}
+
+
+.why p {
+
+    line-height:2;
+    font-size:18px;
+
+}
+
+
+
+/* ===== CALL TO ACTION ===== */
+
+
+.cta {
+
+    background:#2A9D8F;
+    color:white;
+    padding:60px 8%;
+    text-align:center;
+
+}
+
+
+.cta a {
+
+    background:white;
+    color:#0B3D91;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+
+footer {
+
+    background:#062B66;
+    color:white;
+    text-align:center;
+    padding:25px;
+
+}
+
+
+
+</style>
+
 </head>
+
+
 
 <body>
 
-<header>
-  <h1>Julius Care</h1>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </nav>
+<header>
+
+<h1>Julius Care</h1>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="faq.html">FAQ</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+
 </header>
 
+
+
+
+
 <section class="hero">
-  <h2>Professional Care You Can Trust</h2>
 
-  <p>
-    Welcome to Julius Care. We provide professional and reliable services
-    designed to meet the needs of our clients.
-  </p>
 
-  <a href="#services">View Our Services</a>
+<h2>Compassionate Care You Can Trust</h2>
+
+
+<p>
+
+At Julius Care, we provide reliable and personalized care services
+designed to support seniors, individuals, and families with dignity,
+comfort, and peace of mind.
+
+</p>
+
+
+<a href="request-care.html" class="button">
+Request Care
+</a>
+
+
 </section>
 
-<section class="services" id="services">
-  <h2>Our Services</h2>
 
-  <p>
-    More information about our professional services will be added here.
-  </p>
+
+
+
+<section class="about">
+
+
+<h2>Welcome To Julius Care</h2>
+
+
+<p>
+
+We are committed to delivering compassionate care that helps
+our clients maintain independence and enjoy a better quality of life
+in the comfort of their own homes.
+
+</p>
+
+
 </section>
+
+
+
+
+
+
+<section class="services">
+
+
+<h2>Our Services</h2>
+
+
+<div class="service-container">
+
+
+<div class="card">
+
+<h3>Elderly Care</h3>
+
+<p>
+Professional support and companionship for seniors.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Personal Care</h3>
+
+<p>
+Assistance with daily activities while respecting dignity.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>Companion Care</h3>
+
+<p>
+Friendly support and companionship for your loved ones.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Respite Care</h3>
+
+<p>
+Temporary support that gives families peace of mind.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section class="why">
+
+
+<h2>Why Choose Julius Care?</h2>
+
+
+<p>
+
+✓ Compassionate and reliable caregivers
+<br>
+✓ Personalized care approach
+<br>
+✓ Respectful and family-focused service
+<br>
+✓ Commitment to client comfort and safety
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+<section class="cta">
+
+
+<h2>Need Care For Yourself Or A Loved One?</h2>
+
+
+<p>
+Contact Julius Care today and let us support your care journey.
+</p>
+
+
+<br>
+
+
+<a href="request-care.html">
+Request Care
+</a>
+
+
+</section>
+
+
+
+
+
+
 
 <footer>
-  <p>© 2026 Julius Care. All rights reserved.</p>
+
+<p>
+© 2026 Julius Care. All Rights Reserved.
+</p>
+
 </footer>
 
+
+
 </body>
+
 </html>
