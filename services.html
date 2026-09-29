@@ -19,6 +19,7 @@ box-sizing:border-box;
 body{
 font-family:Arial,sans-serif;
 color:#222;
+background:white;
 }
 
 
@@ -140,6 +141,17 @@ color:#0B3D91;
 }
 
 
+.services-intro{
+
+font-size:20px;
+font-weight:700;
+line-height:1.7;
+margin:20px auto;
+max-width:900px;
+
+}
+
+
 .service-container{
 
 display:grid;
@@ -186,6 +198,64 @@ font-weight:900;
 
 
 .card p{
+
+margin-top:15px;
+font-weight:700;
+line-height:1.6;
+
+}
+
+
+
+/* WHO WE SERVE */
+
+.who{
+
+padding:70px 8%;
+background:#eef8ff;
+text-align:center;
+
+}
+
+
+.who h2{
+
+font-size:42px;
+font-weight:900;
+color:#0B3D91;
+
+}
+
+
+.who-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+
+}
+
+
+.who-card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+
+}
+
+
+.who-card h3{
+
+font-size:26px;
+font-weight:900;
+color:#2A9D8F;
+
+}
+
+
+.who-card p{
 
 margin-top:15px;
 font-weight:700;
@@ -274,10 +344,8 @@ font-weight:700;
 
 @media(max-width:900px){
 
-.hero,
-.service-container{
+.hero{
 
-grid-template-columns:1fr;
 flex-direction:column;
 
 }
@@ -286,6 +354,14 @@ flex-direction:column;
 .hero-text{
 
 width:100%;
+
+}
+
+
+.service-container,
+.who-container{
+
+grid-template-columns:1fr;
 
 }
 
@@ -327,6 +403,7 @@ Request Care
 
 
 
+
 <section class="hero">
 
 
@@ -345,7 +422,7 @@ Julius Care provides compassionate non-medical care services designed to help in
 </div>
 
 
-<img src="images/istockphoto-2224622319-612x612.jpg" alt="Care service">
+<img src="images/services-hero.jpg" alt="Julius Care Services">
 
 
 </section>
@@ -362,13 +439,19 @@ Our Services
 </h2>
 
 
+<p class="services-intro">
+At Julius Care, we provide dependable non-medical support designed around each individual's needs. Our goal is to promote comfort, dignity, independence, and peace of mind.
+</p>
+
+
+
 <div class="service-container">
 
 
 
 <div class="card">
 
-<img src="images/istockphoto-652195062-612x612.jpg">
+<img src="images/personal-care.jpg" alt="Personal Care">
 
 <div class="card-content">
 
@@ -389,7 +472,7 @@ Support with daily activities while maintaining dignity, comfort, and independen
 
 <div class="card">
 
-<img src="images/istockphoto-2229081908-612x612.jpg">
+<img src="images/companion-care.jpg" alt="Companion Care">
 
 <div class="card-content">
 
@@ -410,7 +493,7 @@ Friendly companionship and emotional support to improve daily living.
 
 <div class="card">
 
-<img src="images/istockphoto-673695060-612x612.jpg">
+<img src="images/respite-care.jpg" alt="Respite Care">
 
 <div class="card-content">
 
@@ -431,7 +514,7 @@ Reliable temporary support that gives family caregivers peace of mind.
 
 <div class="card">
 
-<img src="images/istockphoto-2224622319-612x612.jpg">
+<img src="images/senior-support.jpg" alt="Senior Support">
 
 <div class="card-content">
 
@@ -452,7 +535,7 @@ Helping seniors maintain safety, confidence, and independence.
 
 <div class="card">
 
-<img src="images/istockphoto-652195062-612x612.jpg">
+<img src="images/household-support.jpg" alt="Household Support">
 
 <div class="card-content">
 
@@ -473,7 +556,7 @@ Assistance with everyday tasks to create a comfortable home environment.
 
 <div class="card">
 
-<img src="images/istockphoto-673695060-612x612.jpg">
+<img src="images/personalized-care.jpg" alt="Personalized Care">
 
 <div class="card-content">
 
@@ -490,8 +573,69 @@ Care solutions designed around each client's unique needs.
 </div>
 
 
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="who">
+
+
+<h2>
+Who We Serve
+</h2>
+
+
+<div class="who-container">
+
+
+<div class="who-card">
+
+<h3>
+Seniors
+</h3>
+
+<p>
+Supporting older adults with comfort, safety, and independence at home.
+</p>
 
 </div>
+
+
+
+<div class="who-card">
+
+<h3>
+Individuals
+</h3>
+
+<p>
+Providing personalized support based on individual needs and routines.
+</p>
+
+</div>
+
+
+
+<div class="who-card">
+
+<h3>
+Families
+</h3>
+
+<p>
+Giving families dependable care support and peace of mind.
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
@@ -529,6 +673,7 @@ Why Choose Julius Care?
 
 
 <section class="cta">
+
 
 <h2>
 Ready To Receive Quality Care?
