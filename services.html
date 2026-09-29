@@ -1,1 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Julius Care</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+color:#222;
+}
+
+
+/* HEADER */
+
+header{
+
+background:#0B3D91;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+
+header img{
+
+width:120px;
+
+}
+
+
+nav{
+
+display:flex;
+gap:25px;
+align-items:center;
+
+}
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+font-weight:700;
+
+}
+
+
+.nav-button{
+
+background:#2A9D8F;
+padding:12px 25px;
+border-radius:30px;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+background:#eef8ff;
+padding:70px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+
+}
+
+
+.hero-text{
+
+width:50%;
+
+}
+
+
+.hero h1{
+
+font-size:50px;
+font-weight:900;
+color:#0B3D91;
+
+}
+
+
+.hero p{
+
+font-size:20px;
+font-weight:700;
+line-height:1.7;
+margin-top:20px;
+
+}
+
+
+.hero img{
+
+width:450px;
+height:350px;
+object-fit:cover;
+border-radius:25px;
+
+}
+
+
+
+/* SERVICES */
+
+.services{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+.services h2{
+
+font-size:42px;
+font-weight:900;
+color:#0B3D91;
+
+}
+
+
+.service-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:50px;
+
+}
+
+
+.card{
+
+background:white;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+overflow:hidden;
+
+}
+
+
+.card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+.card-content{
+
+padding:25px;
+
+}
+
+
+.card h3{
+
+color:#0B3D91;
+font-size:25px;
+font-weight:900;
+
+}
+
+
+.card p{
+
+margin-top:15px;
+font-weight:700;
+line-height:1.6;
+
+}
+
+
+
+/* WHY */
+
+.why{
+
+background:#0B3D91;
+color:white;
+padding:70px 8%;
+
+}
+
+
+.why h2{
+
+font-size:40px;
+font-weight:900;
+
+}
+
+
+.why li{
+
+margin-top:20px;
+font-size:20px;
+font-weight:700;
+
+}
+
+
+
+/* CTA */
+
+.cta{
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+.cta h2{
+
+font-size:40px;
+font-weight:900;
+color:#0B3D91;
+
+}
+
+
+.cta a{
+
+display:inline-block;
+margin-top:30px;
+background:#2A9D8F;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:900;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+background:#0B3D91;
+color:white;
+text-align:center;
+padding:30px;
+font-weight:700;
+
+}
+
+
+
+@media(max-width:900px){
+
+.hero,
+.service-container{
+
+grid-template-columns:1fr;
+flex-direction:column;
+
+}
+
+
+.hero-text{
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="images/ChatGPT%20Image%20Sep%2025,%202026,%2010_41_19%20AM.png" alt="Julius Care Logo">
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="request-care.html" class="nav-button">
+Request Care
+</a>
+
+</nav>
+
+</header>
+
+
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+<h1>
+Professional Care Services You Can Trust
+</h1>
+
+
+<p>
+Julius Care provides compassionate non-medical care services designed to help individuals live safely, comfortably, and independently at home.
+</p>
+
+
+</div>
+
+
+<img src="images/istockphoto-2224622319-612x612.jpg" alt="Care service">
+
+
+</section>
+
+
+
+
+
+<section class="services">
+
+
+<h2>
+Our Services
+</h2>
+
+
+<div class="service-container">
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-652195062-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Personal Care Assistance
+</h3>
+
+<p>
+Support with daily activities while maintaining dignity, comfort, and independence.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-2229081908-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Companion Care
+</h3>
+
+<p>
+Friendly companionship and emotional support to improve daily living.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-673695060-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Respite Care
+</h3>
+
+<p>
+Reliable temporary support that gives family caregivers peace of mind.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-2224622319-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Senior Support
+</h3>
+
+<p>
+Helping seniors maintain safety, confidence, and independence.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-652195062-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Household Support
+</h3>
+
+<p>
+Assistance with everyday tasks to create a comfortable home environment.
+</p>
+
+</div>
+
+</div>
+
+
+
+
+<div class="card">
+
+<img src="images/istockphoto-673695060-612x612.jpg">
+
+<div class="card-content">
+
+<h3>
+Personalized Care Plans
+</h3>
+
+<p>
+Care solutions designed around each client's unique needs.
+</p>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="why">
+
+
+<h2>
+Why Choose Julius Care?
+</h2>
+
+
+<ul>
+
+<li>Compassionate and reliable support</li>
+
+<li>Personalized non-medical care</li>
+
+<li>Respect for every individual's dignity</li>
+
+<li>Family-focused service approach</li>
+
+<li>Commitment to quality care</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+
+<section class="cta">
+
+<h2>
+Ready To Receive Quality Care?
+</h2>
+
+
+<a href="request-care.html">
+Request Care
+</a>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+© 2026 Julius Care. All Rights Reserved.
+
+</footer>
+
+
+</body>
+
+</html>
