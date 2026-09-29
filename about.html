@@ -8,6 +8,7 @@
 
 <title>About Us | Julius Care</title>
 
+
 <style>
 
 *{
@@ -16,76 +17,99 @@ padding:0;
 box-sizing:border-box;
 }
 
+
 body{
-font-family:Arial,sans-serif;
-color:#222222;
+
+font-family:Arial, sans-serif;
+color:#222;
+background:white;
+
 }
 
 
-/* ===== HEADER (MATCH HOME PAGE) ===== */
+
+/* HEADER */
 
 header{
+
 background:#0B3D91;
-color:white;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+
 }
 
 
 header img{
+
 width:120px;
+
 }
 
 
 nav{
+
 display:flex;
 align-items:center;
 gap:25px;
+
 }
 
 
 nav a{
+
 color:white;
 text-decoration:none;
 font-weight:700;
+
 }
 
 
 .nav-button{
+
 background:#2A9D8F;
 padding:12px 25px;
 border-radius:30px;
+
 }
 
 
 
-/* ===== HERO ===== */
-
+/* HERO */
 
 .hero{
 
-background:#eef8ff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
 padding:80px 8%;
-text-align:center;
+background:#eef8ff;
 
 }
 
 
-.hero h1{
+.hero-text{
 
-color:#0B3D91;
+width:50%;
+
+}
+
+
+.hero-text h1{
+
 font-size:50px;
 font-weight:900;
+color:#0B3D91;
+line-height:1.2;
 
 }
 
 
-.hero p{
+.hero-text p{
 
-max-width:850px;
-margin:25px auto;
+margin-top:25px;
 font-size:20px;
 font-weight:700;
 line-height:1.7;
@@ -93,47 +117,66 @@ line-height:1.7;
 }
 
 
+.hero img{
+
+width:500px;
+height:400px;
+object-fit:cover;
+border-radius:25px;
+
+}
 
 
-/* ===== ABOUT TEXT ===== */
 
+/* ABOUT */
 
 .about{
 
-padding:80px 15%;
-text-align:center;
+display:flex;
+align-items:center;
+gap:50px;
+padding:80px 8%;
 
 }
 
 
-.about h2{
+.about img{
 
-color:#0B3D91;
+width:500px;
+height:400px;
+object-fit:cover;
+border-radius:25px;
+
+}
+
+
+.about-text h2{
+
 font-size:40px;
 font-weight:900;
+color:#0B3D91;
 
 }
 
 
-.about p{
+.about-text p{
 
-margin-top:25px;
-font-size:20px;
+margin-top:20px;
+font-size:19px;
 font-weight:700;
-line-height:1.8;
+line-height:1.7;
 
 }
 
 
 
-/* ===== MISSION VISION ===== */
+/* MISSION */
 
-
-.cards{
+.mission{
 
 display:flex;
 gap:30px;
-padding:50px 8%;
+padding:60px 8%;
 
 }
 
@@ -151,9 +194,9 @@ text-align:center;
 
 .card h3{
 
-color:#0B3D91;
 font-size:28px;
 font-weight:900;
+color:#0B3D91;
 
 }
 
@@ -161,15 +204,14 @@ font-weight:900;
 .card p{
 
 margin-top:20px;
-font-size:18px;
 font-weight:700;
+font-size:18px;
 
 }
 
 
 
-/* ===== VALUES ===== */
-
+/* VALUES */
 
 .values{
 
@@ -181,14 +223,14 @@ text-align:center;
 
 .values h2{
 
-color:#0B3D91;
 font-size:40px;
 font-weight:900;
+color:#0B3D91;
 
 }
 
 
-.value-box{
+.value-container{
 
 display:flex;
 gap:25px;
@@ -201,8 +243,8 @@ margin-top:40px;
 
 flex:1;
 padding:30px;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
 border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 
 }
 
@@ -210,22 +252,22 @@ border-radius:20px;
 .value h3{
 
 color:#2A9D8F;
-font-weight:900;
 font-size:24px;
+font-weight:900;
 
 }
 
 
 .value p{
 
+margin-top:15px;
 font-weight:700;
 
 }
 
 
 
-/* ===== WHY ===== */
-
+/* WHY */
 
 .why{
 
@@ -254,50 +296,85 @@ font-weight:700;
 
 
 
-/* ===== FOUNDER ===== */
-
+/* FOUNDER */
 
 .founder{
 
-padding:80px 15%;
-text-align:center;
+display:flex;
+align-items:center;
+gap:50px;
+padding:80px 8%;
+
+}
+
+
+.founder img{
+
+width:350px;
+height:350px;
+object-fit:cover;
+border-radius:25px;
 
 }
 
 
 .founder h2{
 
-color:#0B3D91;
 font-size:40px;
 font-weight:900;
+color:#0B3D91;
 
 }
 
 
 .founder p{
 
-margin-top:25px;
-font-size:20px;
+margin-top:20px;
+font-size:19px;
 font-weight:700;
-line-height:1.8;
+line-height:1.7;
 
 }
 
 
 
-/* ===== FOOTER ===== */
-
+/* FOOTER */
 
 footer{
 
 background:#0B3D91;
 color:white;
-padding:30px;
 text-align:center;
+padding:30px;
 font-weight:700;
 
 }
 
+
+
+@media(max-width:900px){
+
+.hero,
+.about,
+.founder,
+.mission,
+.value-container{
+
+flex-direction:column;
+
+}
+
+
+.hero-text,
+.hero img,
+.about img{
+
+width:100%;
+
+}
+
+
+}
 
 </style>
 
@@ -308,6 +385,7 @@ font-weight:700;
 
 
 <header>
+
 
 <img src="images/ChatGPT%20Image%20Sep%2025,%202026,%2010_41_19%20AM.png" alt="Julius Care Logo">
 
@@ -330,11 +408,16 @@ Request Care
 
 </nav>
 
+
 </header>
 
 
 
+
 <section class="hero">
+
+
+<div class="hero-text">
 
 <h1>
 Compassionate Care You Can Trust
@@ -346,12 +429,26 @@ Julius Care provides reliable non-medical home care services that support senior
 </p>
 
 
+</div>
+
+
+<img src="images/istockphoto-2229081908-612x612.jpg" alt="Caregiver support">
+
+
 </section>
 
 
 
 
+
 <section class="about">
+
+
+<img src="images/istockphoto-652195062-612x612.jpg" alt="Julius Care">
+
+
+<div class="about-text">
+
 
 <h2>
 About Julius Care
@@ -364,8 +461,11 @@ Julius Care is a non-medical home care agency dedicated to supporting individual
 
 
 <p>
-Our goal is to help every client maintain dignity, independence, comfort, and quality of life through dependable support.
+We help clients maintain dignity, comfort, independence, and quality of life while receiving support in their own homes.
 </p>
+
+
+</div>
 
 
 </section>
@@ -373,7 +473,8 @@ Our goal is to help every client maintain dignity, independence, comfort, and qu
 
 
 
-<section class="cards">
+
+<section class="mission">
 
 
 <div class="card">
@@ -383,7 +484,7 @@ Our Mission
 </h3>
 
 <p>
-To provide compassionate and dependable care that improves the daily lives of every individual we support.
+To provide dependable and compassionate care that improves the daily lives of every individual we support.
 </p>
 
 </div>
@@ -397,7 +498,7 @@ Our Vision
 </h3>
 
 <p>
-To become a trusted care provider recognized for quality, respect, and personalized support.
+To become a trusted care provider known for respect, reliability, and personalized support.
 </p>
 
 </div>
@@ -408,44 +509,46 @@ To become a trusted care provider recognized for quality, respect, and personali
 
 
 
+
 <section class="values">
 
 
 <h2>
-The Principles That Guide Our Care
+Our Core Values
 </h2>
 
 
-<div class="value-box">
+<div class="value-container">
 
 
 <div class="value">
 <h3>Compassion</h3>
-<p>Care delivered with kindness and understanding.</p>
+<p>We provide care with kindness and understanding.</p>
 </div>
 
 
 <div class="value">
 <h3>Respect</h3>
-<p>Every individual deserves dignity and choice.</p>
+<p>We respect every individual's dignity and choices.</p>
 </div>
 
 
 <div class="value">
 <h3>Reliability</h3>
-<p>Families can depend on consistent support.</p>
+<p>Families can depend on our consistent support.</p>
 </div>
 
 
 <div class="value">
 <h3>Personal Care</h3>
-<p>Support based on individual needs.</p>
+<p>Support designed around individual needs.</p>
 </div>
 
 
 </div>
 
 </section>
+
 
 
 
@@ -460,9 +563,9 @@ Why Choose Julius Care?
 
 <ul>
 
-<li>Compassionate and reliable caregivers</li>
+<li>Compassionate and reliable support</li>
 
-<li>Personalized non-medical care support</li>
+<li>Personalized care solutions</li>
 
 <li>Focus on dignity and independence</li>
 
@@ -478,7 +581,14 @@ Why Choose Julius Care?
 
 
 
+
 <section class="founder">
+
+
+<img src="images/istockphoto-652195062-612x612.jpg" alt="Founder">
+
+
+<div>
 
 
 <h2>
@@ -487,8 +597,11 @@ Julius Olamilekan
 
 
 <p>
-Founder of Julius Care. Julius Olamilekan created the agency with a commitment to providing meaningful non-medical care support that helps individuals and families live comfortably and confidently at home.
+Founder of Julius Care. Julius Olamilekan created the agency with a commitment to providing meaningful non-medical care support that helps individuals and families live comfortably and confidently.
 </p>
+
+
+</div>
 
 
 </section>
