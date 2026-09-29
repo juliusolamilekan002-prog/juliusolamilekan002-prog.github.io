@@ -17,87 +17,66 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 color:#222;
-background:#ffffff;
+background:white;
 }
 
 
 /* HEADER */
 
 header{
-
 background:#0B3D91;
 padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-
 }
-
 
 header img{
-
 width:120px;
-
 }
 
-
 nav{
-
 display:flex;
 align-items:center;
 gap:25px;
-
 }
 
-
 nav a{
-
 color:white;
 text-decoration:none;
 font-weight:700;
-
 }
 
-
 .nav-button{
-
 background:#2A9D8F;
 padding:12px 25px;
 border-radius:30px;
-
 }
+
 
 
 /* HERO */
 
 .hero{
-
 background:#eef8ff;
-padding:90px 12%;
+padding:80px 10%;
 text-align:center;
-
 }
 
-
 .hero h1{
-
 font-size:50px;
 font-weight:900;
 color:#0B3D91;
-
 }
 
-
 .hero p{
-
 max-width:850px;
 margin:25px auto;
 font-size:20px;
 font-weight:700;
 line-height:1.8;
-
 }
 
 
@@ -105,50 +84,36 @@ line-height:1.8;
 /* ABOUT */
 
 .about{
-
-padding:80px 12%;
+padding:70px 10%;
 text-align:center;
-
 }
 
-
-.about h2{
-
+.about h2,
+.section-title{
 font-size:42px;
 font-weight:900;
 color:#0B3D91;
-
 }
 
-
 .about p{
-
-margin-top:25px;
+margin-top:20px;
 font-size:20px;
 font-weight:700;
 line-height:1.8;
-
 }
 
-
-/* ABOUT IMAGE */
 
 .about-image{
-
-padding:20px 12% 80px;
+padding:20px 10% 70px;
 text-align:center;
-
 }
 
-
 .about-image img{
-
 width:100%;
 max-width:900px;
 height:450px;
 object-fit:cover;
 border-radius:25px;
-
 }
 
 
@@ -156,39 +121,380 @@ border-radius:25px;
 /* MISSION */
 
 .mission{
-
 display:flex;
 gap:30px;
 padding:60px 8%;
-
 }
 
-
 .card{
-
 flex:1;
 background:#eef8ff;
 padding:40px;
 border-radius:20px;
 text-align:center;
-
 }
 
-
 .card h3{
-
 font-size:30px;
 font-weight:900;
 color:#0B3D91;
-
 }
 
-
 .card p{
-
 margin-top:20px;
 font-size:18px;
 font-weight:700;
 line-height:1.6;
+}
+
+
+
+/* VALUES */
+
+.values{
+padding:70px 8%;
+text-align:center;
+}
+
+.value-container{
+display:flex;
+gap:25px;
+margin-top:40px;
+}
+
+.value{
+flex:1;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.value h3{
+color:#2A9D8F;
+font-size:25px;
+font-weight:900;
+}
+
+.value p{
+margin-top:15px;
+font-weight:700;
+}
+
+
+
+/* TEAM */
+
+.team{
+padding:70px 10%;
+text-align:center;
+}
+
+.team img{
+width:100%;
+max-width:900px;
+height:400px;
+object-fit:cover;
+border-radius:25px;
+margin-top:40px;
+}
+
+
+
+/* WHY */
+
+.why{
+background:#0B3D91;
+color:white;
+padding:70px 10%;
+}
+
+.why h2{
+font-size:42px;
+font-weight:900;
+}
+
+.why li{
+margin-top:20px;
+font-size:20px;
+font-weight:700;
+}
+
+
+
+/* FOUNDER */
+
+.founder{
+padding:70px 10%;
+text-align:center;
+}
+
+.founder h2{
+font-size:42px;
+font-weight:900;
+color:#0B3D91;
+}
+
+.founder p{
+margin-top:25px;
+font-size:20px;
+font-weight:700;
+line-height:1.8;
+}
+
+
+
+/* FOOTER */
+
+footer{
+background:#0B3D91;
+color:white;
+padding:30px;
+text-align:center;
+font-weight:700;
+}
+
+
+
+@media(max-width:900px){
+
+nav{
+gap:10px;
+}
+
+.mission,
+.value-container{
+flex-direction:column;
+}
+
+.hero h1{
+font-size:38px;
+}
 
 }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<img src="images/ChatGPT%20Image%20Sep%2025,%202026,%2010_41_19%20AM.png" alt="Julius Care Logo">
+
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="services.html">Services</a>
+
+<a href="faq.html">FAQ</a>
+
+<a href="contact.html">Contact</a>
+
+<a href="request-care.html" class="nav-button">
+Request Care
+</a>
+
+</nav>
+
+</header>
+
+
+
+
+<section class="hero">
+
+<h1>
+Compassionate Care You Can Trust
+</h1>
+
+<p>
+At Julius Care, we provide compassionate and reliable non-medical care services that support seniors, individuals, and families with dignity, comfort, and peace of mind.
+</p>
+
+</section>
+
+
+
+
+<section class="about">
+
+<h2>
+About Julius Care
+</h2>
+
+<p>
+Julius Care is a non-medical home care agency dedicated to supporting individuals and families with compassionate, reliable, and personalized care solutions.
+</p>
+
+<p>
+We help clients maintain dignity, independence, comfort, and quality of life while receiving dependable support in their homes.
+</p>
+
+</section>
+
+
+
+
+<section class="about-image">
+
+<img src="images/about-caregiver.jpg" alt="Julius Care caregiver support">
+
+</section>
+
+
+
+
+<section class="mission">
+
+
+<div class="card">
+
+<h3>
+Our Mission
+</h3>
+
+<p>
+To provide compassionate and dependable care that improves the daily lives of every individual we support.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Our Vision
+</h3>
+
+<p>
+To become a trusted care provider known for respect, reliability, and personalized support.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="values">
+
+<h2 class="section-title">
+Our Core Values
+</h2>
+
+
+<div class="value-container">
+
+
+<div class="value">
+<h3>Compassion</h3>
+<p>We provide care with kindness and understanding.</p>
+</div>
+
+
+<div class="value">
+<h3>Respect</h3>
+<p>We respect every person's dignity and choices.</p>
+</div>
+
+
+<div class="value">
+<h3>Reliability</h3>
+<p>Families can depend on our consistent support.</p>
+</div>
+
+
+<div class="value">
+<h3>Personal Care</h3>
+<p>Support designed around individual needs.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="team">
+
+<h2 class="section-title">
+Our Commitment To Care
+</h2>
+
+<p style="margin-top:20px;font-size:20px;font-weight:700;">
+Our team is dedicated to creating a safe, comfortable, and supportive environment for every client and family we serve.
+</p>
+
+
+<img src="images/about-team.jpg" alt="Julius Care team">
+
+</section>
+
+
+
+
+
+<section class="why">
+
+<h2>
+Why Choose Julius Care?
+</h2>
+
+
+<ul>
+
+<li>Compassionate and reliable care support</li>
+
+<li>Personalized non-medical assistance</li>
+
+<li>Respect for dignity and independence</li>
+
+<li>Family-centered approach</li>
+
+<li>Commitment to quality service</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+<section class="founder">
+
+<h2>
+Julius Olamilekan
+</h2>
+
+<p>
+Founder of Julius Care. Julius Olamilekan created the agency with a commitment to providing meaningful non-medical care support that helps individuals and families live comfortably and confidently.
+</p>
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 Julius Care. All Rights Reserved.
+
+</footer>
+
+
+</body>
+
+</html>
